@@ -20,15 +20,14 @@ export class Welcome {
       id: '1',
       title: 'Fútbol Grid',
       description:
-        'Adivina la posición de los jugadores en el campo y demuestra tu conocimiento futbolístico.',
+        'Completa una cuadrícula 3x3 con futbolistas que cumplan los criterios de filas y columnas.',
       route: '/futbol-grid',
-      backgroundImage: 'assets/background1.jpg',
+      backgroundImage: 'assets/background1.png',
     },
     {
       id: '2',
       title: 'Memoria',
-      description:
-        'Encuentra las parejas de cartas iguales y pon a prueba tu memoria visual.',
+      description: 'Encuentra las parejas de cartas y pon a prueba tu memoria.',
       route: '/memoria',
       backgroundImage: 'assets/background2.jpg',
     },
@@ -36,7 +35,7 @@ export class Welcome {
       id: '3',
       title: 'Top Positions',
       description:
-        'Clasifica a los mejores jugadores y crea tu ranking perfecto.',
+        'Completa una lista de 10 jugadores según un título, con ayuda de sus naciones como pista.',
       route: '/top-positions',
       backgroundImage: 'assets/background3.jpg',
     },
