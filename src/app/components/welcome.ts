@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AnimatedBackground } from './animated-background';
 
 interface Game {
   id: string;
@@ -11,7 +12,7 @@ interface Game {
 
 @Component({
   selector: 'app-welcome',
-  imports: [RouterLink],
+  imports: [RouterLink, AnimatedBackground],
   templateUrl: './welcome.html',
 })
 export class Welcome {

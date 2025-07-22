@@ -1,23 +1,7 @@
 <main
   class="min-h-screen bg-black p-4 md:p-8 relative overflow-hidden flex items-center"
 >
-  <div
-    class="absolute top-32 left-16 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"
-  ></div>
-  <div
-    class="absolute bottom-20 right-20 w-80 h-80 bg-sky-600/20 rounded-full blur-3xl"
-  ></div>
-  <div
-    class="absolute top-1/2 right-10 w-64 h-64 bg-teal-400/30 rounded-full blur-3xl"
-  ></div>
-
-  <div
-    class="absolute top-20 right-1/3 w-48 h-48 bg-sky-600/25 rounded-full blur-3xl"
-  ></div>
-  <div
-    class="absolute bottom-40 left-1/2 w-56 h-56 bg-cyan-600/20 rounded-full blur-3xl"
-  ></div>
-
+  <app-animated-background></app-animated-background>
   <div class="max-w-7xl mx-auto px-4 relative z-10 w-full">
     <header class="text-center mb-8">
       <div class="mb-4">
@@ -26,13 +10,13 @@
         >
           <span class="text-white">HatTrick</span>
           <span
-            class="bg-gradient-to-r from-green-600 to-sky-600 text-white px-3 md:px-6 py-2 md:py-3 text-2xl md:text-6xl font-black transform rotate-3"
+            class="bg-gradient-to-r from-purple-700 to-orange-600 text-white px-3 md:px-6 py-2 md:py-3 text-2xl md:text-6xl font-black transform rotate-3"
             >GAMES</span
           >
         </h1>
       </div>
       <p
-        class="text-slate-400 text-sm md:text-base max-w-md mx-auto font-light"
+        class="text-gray-100 text-sm md:text-base max-w-md mx-auto font-light mt-8"
       >
         Pon a prueba tus habilidades con nuestros juegos de fútbol.
       </p>
@@ -43,7 +27,7 @@
 
       <div class="group cursor-pointer">
         <div
-          class="w-full h-72 md:h-96 rounded-2xl md:rounded-3xl relative overflow-hidden bg-cover bg-center transition-all duration-500 hover:scale-105"
+          class="w-full size-52 md:h-96 rounded-2xl md:rounded-3xl relative overflow-hidden bg-cover bg-center transition-all duration-500 hover:scale-105"
           [style.background-image]="'linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(' + game.backgroundImage + ')'"
         >
           <div class="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
@@ -59,7 +43,7 @@
             </p>
             <a
               [routerLink]="game.route"
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-md font-semibold text-sm transition-all duration-300 hover:scale-105 w-fit bg-gradient-to-r from-teal-500 to-teal-600 text-white"
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-md font-semibold text-sm transition-all duration-300 hover:scale-105 w-fit bg-gradient-to-r from-orange-600 to-orange-400 text-white"
             >
               <span>Jugar</span>
             </a>

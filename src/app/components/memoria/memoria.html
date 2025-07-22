@@ -1,32 +1,5 @@
-<div class="min-h-screen bg-black flex flex-col">
-  <nav
-    class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-700/30"
-  >
-    <div
-      class="max-w-6xl mx-auto px-4 py-4 md:py-6 flex items-center justify-between"
-    >
-      <div class="flex items-center">
-        <h1
-          class="text-xl font-black flex items-center gap-2 md:text-3xl md:gap-2"
-        >
-          <span class="text-white">HatTrick</span>
-          <span
-            class="bg-gradient-to-r from-green-600 to-sky-600 text-white px-2 py-1 text-xl font-black transform rotate-3 md:px-4 md:py-2 md:text-3xl"
-          >
-            GAMES
-          </span>
-        </h1>
-      </div>
-      <button
-        (click)="goToNextRoute()"
-        class="flex items-center gap-2 px-3 py-2 bg-gray-800/50 hover:bg-gray-700/50 border border-gray-600/50 rounded-lg transition-colors text-white md:px-4"
-      >
-        <span class="material-symbols-outlined text-lg">arrow_back</span>
-        <span class="text-sm md:text-base">Regresar</span>
-      </button>
-    </div>
-  </nav>
-
+<div class="h-screen bg-black flex flex-col overflow-hidden">
+  <app-header></app-header>
   <main
     class="flex-1 pt-20 p-4 relative overflow-hidden flex flex-col md:pt-28"
   >

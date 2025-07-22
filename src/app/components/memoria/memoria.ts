@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, signal, computed } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { AppHeader } from '../app-header';
 
 interface Card {
   id: number;
@@ -37,7 +38,7 @@ type CurrentPlayer = 'user' | 'bot';
 
 @Component({
   selector: 'app-memoria',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, AppHeader],
   templateUrl: './memoria.html',
 })
 export class Memoria {

@@ -7,7 +7,9 @@ import {
   PLAYERS,
   ROW_TEAMS,
 } from '../../data/football-data';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { AppHeader } from '../app-header';
+import { AnimatedBackground } from '../animated-background';
 
 interface Cell {
   rowTeam: string;
@@ -18,7 +20,13 @@ interface Cell {
 
 @Component({
   selector: 'app-futbol-grid',
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule,
+    AppHeader,
+    AnimatedBackground,
+  ],
   templateUrl: './futbol-grid.html',
 })
 export class FutbolGrid {
